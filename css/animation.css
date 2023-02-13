@@ -1,0 +1,248 @@
+/******************
+*** Intro ***
+******************/
+
+#intro .introWrap .lion {
+	-webkit-animation: spinLion 1500ms linear infinite alternate;
+	-moz-animation: spinLion 1500ms linear infinite alternate;
+	animation: spinLion 1500ms linear infinite alternate;
+}
+/*-webkit-크롬,사파리 호환*/
+/*-moz- 파이어폭스 호환*/
+
+@-webkit-keyframes spinLion {
+	from { transform: rotate(-10deg); }
+	to { transform: rotate(10deg); }
+}
+@-moz-keyframes spinLion {
+	from { transform: rotate(-10deg); }
+	to { transform: rotate(10deg); }
+}
+@keyframes spinLion {
+	from { transform: rotate(-10deg); }
+	to { transform: rotate(10deg); }
+}
+
+#intro .introWrap .rabbit {
+	animation: spinRabbit 1000ms linear infinite alternate;
+}
+
+@keyframes spinRabbit {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(5deg); }
+}
+
+#intro .introWrap .bear {
+	animation: spinBear 1000ms linear infinite alternate;
+}
+
+@keyframes spinBear {
+	from { transform: rotate(10deg); }
+	to { transform: rotate(-10deg); }
+}
+
+#intro .introWrap .monkey {
+	animation: spinMonkey 800ms linear infinite alternate;
+}
+
+@keyframes spinMonkey {
+	from { transform: rotate(20deg); }
+	to { transform: rotate(50deg); }
+}
+
+/******************
+*** Intro .Dragonfly ***
+******************/
+
+#intro .cloudWrap .dragonfly {
+	animation: flyDragonfly linear 7s infinite normal;
+}
+
+@keyframes flyDragonfly {
+	from { left: -366px; }
+	to { left: 110%; }
+}
+
+/******************
+*** Farm3 ***
+******************/
+
+#farm3 .machineWrap .timer {
+	animation: Timer 10000ms linear infinite;	
+}
+
+@keyframes Timer {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+#farm3 .machineWrap .saw1 {
+	animation: Saw1 10000ms linear infinite;
+}
+
+@keyframes Saw1 {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+#farm3 .machineWrap .saw2 {
+	animation: Saw2 10000ms linear infinite;
+}
+
+@keyframes Saw2 {
+	from { transform: rotate(360deg); }
+	to { transform: rotate(0deg); }
+}
+
+
+
+/******************
+*** Forest1 ***
+******************/
+
+#forest1 .treeWrap .rabbit1 {
+	animation: spinRabbit1 1000ms linear infinite alternate;
+}
+
+@keyframes spinRabbit1 {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(10deg); }
+}
+
+#forest1 .treeWrap .rabbit2 {
+	animation: spinRabbit2 1000ms linear infinite alternate;
+}
+
+@keyframes spinRabbit2 {
+	from { transform: rotate(10deg); }
+	to { transform: rotate(0deg); }
+}
+
+/******************
+*** Forest2 ***
+******************/
+
+#forest2 .machineWrap .machineleft {
+	animation: machineLeft 1s linear infinite alternate;
+}
+
+@keyframes machineLeft {
+	from { left: 30px; }
+	to { left: 0; }
+}
+
+#forest2 .machineWrap .machineright {
+	animation: machineRight 1s linear infinite alternate;
+}
+
+@keyframes machineRight {
+	from { left: -30px; }
+	to { left: 0; }
+}
+
+/******************
+*** Forest3 ***
+******************/
+
+#forest3 .forest3Wrap .bird_sm {
+	animation: bird_Sm 1000ms linear infinite alternate;
+}
+
+@keyframes bird_Sm {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(10deg); }
+}
+
+#forest3 .forest3Wrap .bird_big {
+	animation: bird_Big 1000ms linear infinite alternate;
+}
+
+@keyframes bird_Big {
+	from { transform: rotate(-10deg); }
+	to { transform: rotate(0deg); }
+}
+
+/******************
+*** Science ***
+******************/
+
+#science .scienceWrap .gly {
+	animation: gly 1500ms linear infinite alternate;
+}
+
+@keyframes gly {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(50deg); }
+}
+
+#science .scienceWrap .water {
+	animation: gly 1500ms linear infinite alternate;
+}
+
+@keyframes water {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(-50deg); }
+}
+
+/******************
+*** Night1 ***
+******************/
+
+#night1 .starWrap .star1,
+#night1 .starWrap .star2,
+#night1 .starWrap .star3 {
+	animation: pulseStar 0.3s linear infinite alternate;
+}
+
+@keyframes pulseStar {
+	from { transform: scale(1.2);}
+	to { transform: scale(0.6); }
+}
+
+/******************
+*** Night2 ***
+******************/
+
+#night2 .moon {
+	animation: moveMoon linear 10s infinite;
+}
+
+@keyframes moveMoon {
+	from { margin-left: -135px; }
+	to { margin-left: 110%; }
+}
+
+
+/******************
+*** Morning ***
+******************/
+
+#morning .sun {
+	animation: moveSun linear 10s 1500ms infinite;
+}
+
+@keyframes moveSun {
+	from { margin-left: -131px; }
+	to { margin-left: 110%; }
+}
+
+/******************
+*** Kichen ***
+******************/
+
+#kitchen .steamwrap .bubble1 {
+  animation-name: bubble1;
+  animation-duration: 2000ms;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 0 0;
+}
+
+@keyframes bubble1 {
+	0% {transform:translate(0px, 0px) }
+	50% {transform:translate(-87.5px, -150px) }
+	100% {transform:translate(-100px, -300px) }
+}
+
